@@ -404,6 +404,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
+        z-index: 10;
 
         &-btn {
             background-color: rgba(#F1F1F1, .2);

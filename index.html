@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" style="background-image: url('./images/header-bg.png');">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__top">
+                        <div class="header__top-left">
+                            <a class="header__top-link" href="#">
+                                <img class="header__top-link__logo" src="images/header-logo.svg" alt="">
+                            </a>
+                            <p class="header__top-text">Расправь плечи в теплом доме</p>
+                        </div>
+                        <div class="header__top-right">
+                            <a class="header__top-phone" href="tel:+79263306834">+7 926 330-68-34</a>
+                            <a class="header__top-link" href="#">Срочный вопрос</a>
+                        </div>
+                    </div>
+                    <div class="header__bottom">
+                        <div class="header__bottom-breadcrumbs">
+                            <div class="header__bottom-breadcrumbs__item">
+                                <img class="header__bottom-breadcrumbs__img" src="images/breadcrumbs-img-1.svg" alt="">
+                                <p class="header__bottom-breadcrumbs__text">В любое время дня и ночи</p>
+                            </div>
+                            <div class="header__bottom-breadcrumbs__item">
+                                <img class="header__bottom-breadcrumbs__img" src="images/breadcrumbs-img-2.svg" alt="">
+                                <p class="header__bottom-breadcrumbs__text">Вне зависимости от погодных условий</p>
+                            </div>
+                        </div>
+                        <div class="header__bottom-title">
+                            <h1 class="header__bottom-title__text">Доставим газ за 4 часа</h1>
+                            <h4 class="header__bottom-title__subtext">в любую точку Москвы и Московской области</h4>
+                            <div class="header__bottom-title__image">
+                                <svg width="107" height="114" viewBox="0 0 107 114" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path class="line"
+                                            d="M82.1667 87.294L80.399 86.0088C81.3922 84.6814 82.3749 83.3352 83.2857 81.9055L85.0888 83.1212C84.2452 84.5379 83.1682 85.9372 82.1667 87.294ZM87.8824 78.8968L85.9872 77.7825C86.8745 76.2669 87.6402 74.8445 88.2904 73.4376L90.2624 74.3352C89.5487 75.8957 88.7544 77.4183 87.8824 78.8968ZM92.0967 69.5107L90.0017 68.8806C90.1615 68.3694 90.3 67.8205 90.4303 67.301C90.6749 66.2724 90.8517 65.229 90.9596 64.1776L93.1306 64.3684C93.0162 65.5176 92.8279 66.6584 92.5668 67.7838C92.5143 68.309 92.273 68.9405 92.0967 69.5107ZM93.0702 59.0489L90.8905 59.2844C90.7274 57.6993 90.3828 56.1386 89.8635 54.6329L91.9423 53.9089C92.5269 55.6046 92.923 57.3599 93.1232 59.143L93.0702 59.0489ZM87.7723 50.4317C86.8912 49.147 85.802 48.0179 84.5492 47.0907L85.8413 45.3225C87.2848 46.3941 88.5395 47.6979 89.5544 49.1807L87.7723 50.4317ZM80.4143 44.9568C78.9094 44.4685 77.348 44.1731 75.7675 44.0778L75.916 41.9123C77.684 41.9976 79.4313 42.3232 81.11 42.8799L80.4143 44.9568ZM70.9273 44.2245C69.4813 44.3941 67.8842 44.6486 66.0794 45.0201L65.5864 42.8191C67.263 42.4499 68.9587 42.1739 70.6655 41.9926L70.9273 44.2245ZM61.1992 46.156L59.7141 46.521L56.3025 47.3508L55.7718 45.171L59.1538 44.3331L60.6579 43.9574L61.1992 46.156ZM51.3105 48.3761C49.6273 48.6544 47.9206 48.8467 46.2115 48.9908L46.0593 46.821C47.6905 46.6712 49.3489 46.4813 50.9649 46.2161L51.3105 48.3761ZM41.0918 49.171C39.3865 49.189 37.6765 49.1106 36.0126 48.9814L36.18 46.8052C37.8145 46.9262 39.4655 46.9883 41.1036 46.9833L41.0918 49.171ZM30.9067 48.4351C29.2358 48.1611 27.5438 47.8495 25.8872 47.4683L26.3872 45.3528C27.9848 45.7176 29.6178 46.0129 31.2297 46.2705L30.9067 48.4351ZM20.9673 46.1481C19.3332 45.6304 17.7158 45.0537 16.155 44.4451L16.9497 42.4116C18.481 43.012 20.0773 43.551 21.604 44.0548L20.9673 46.1481ZM11.4044 42.41C9.88507 41.6542 8.38228 40.8395 6.92553 39.9741L8.03844 38.1085C9.44452 38.928 10.9072 39.7157 12.3865 40.4445L11.4044 42.41ZM2.63449 37.2095C1.8414 36.6397 1.04829 36.0699 0.28237 35.4601L1.62512 33.7377C2.38045 34.3287 3.13347 34.8715 3.89708 35.433L2.63449 37.2095Z"
+                                            stroke="white" stroke-width="1" />
+                                        <path class="arrow"
+                                            d="M92.7256 85.9111L92.2833 83.756L81.7341 85.9513L80.3514 75.279L78.1741 75.5628L79.8609 88.5423L92.7256 85.9111Z"
+                                            stroke="white" stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <a class="header__bottom-title__btn style-btn" id="pupupCall">Заказать доставку
+                                газа в
+                                газгольдер</a>
+                            <p class="header__bottom-title__subtitle">Доставка газа всегда по актуальным ценам</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="popup">
+                <div class="container">
+                    <div class="popup__inner">
+                        <form class="popup__form" action="">
+                            <h4 class="popup__form-title">Доставим газ за 4 часа</h4>
+                            <a class="popup__form-close" id="pupupClose">
+                                <img class="popup__form-close__img" src="images/popup-close.svg" alt="">
+                            </a>
+                            <input class="popup__form-input" type="text" id="buy-text" required placeholder="имя">
+                            <input class="popup__form-input" type="tel" id="buy-tel" required placeholder="телефон">
+                            <button class="popup__form-submit style-btn" id="buy-btn" formtarget="_blank">Заказать
+                                доставку газа</button>
+                        </form>
+                        <p class="popup__info">
+                            Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с
+                            условиями политики конфиденциальности
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="price">
+                <div class="container">
+                    <div class="price__inner">
+                        <h3 class="price__title section-title">Стоимость газа в ваш газгольдер сегодня</h3>
+                        <div class="price__list">
+                            <div class="price__list-item">
+                                <h3 class="price__list-item__title">Пропан</h3>
+                                <h4 class="price__list-item__subtitle">от 25 рублей за литр</h4>
+                                <p class="price__list-item__text">Физически испарение происходит до -40 градусов, что
+                                    позволяет использовать его в наших с вами погодных условиях</p>
+                                <a class="price__list-item__btn simple-btn" id="pupupCall">Заказать</a>
+                            </div>
+                            <div class="price__list-info">
+                                <p class="price__list-info__title">Идеальное соотношение</p>
+                                <div class="price__list-info__text">
+                                    <p>80%<span>пропана</span></p>
+                                    <p>20%<span>бутана</span></p>
+                                </div>
+                                <img class="price__list-info__bg" src="images/price-bg.png" alt="">
+                            </div>
+                            <div class="price__list-item">
+                                <h3 class="price__list-item__title">Бутан</h3>
+                                <h4 class="price__list-item__subtitle">от 16 рублей за литр</h4>
+                                <p class="price__list-item__text">Испарение Бутана происходит только до 0 градусов и
+                                    годится для использования в тёплое время года</p>
+                                <a class="price__list-item__btn simple-btn" id="pupupCall">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="price__arrows animate__animated animate__slideInDown animate__infinite animate__slow"
+                        href="#">
+                        <img class="price__arrows-img" src="images/price-arrows.svg" alt="">
+                    </a>
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="container">
+                    <h3 class="benefits__title">Преимущества работы с нашей компанией</h3>
+                    <div class="benefits__list">
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-1.png" alt="">
+                            <h4 class="benefits__list-item__title">Экономия на хранилище</h4>
+                            <p class="benefits__list-item__text">за счёт собственных цистерн на нашей базе</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-2.png" alt="">
+                            <h4 class="benefits__list-item__title">Экономия на транспорте</h4>
+                            <p class="benefits__list-item__text">более 10 собственный газовозов</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-3.png" alt="">
+                            <h4 class="benefits__list-item__title">Поставки напрямую от производителей</h4>
+                            <p class="benefits__list-item__text">нет наценки на стоимость газа как у перекупщиков и
+                                небольших частных компаний</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-4.png" alt="">
+                            <h4 class="benefits__list-item__title">Любые объёмы поставки качественного газа</h4>
+                            <p class="benefits__list-item__text">вы получаете объем от 1 тонны до 20 тонн, с
+                                сертификатом качества газа</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-5.png" alt="">
+                            <h4 class="benefits__list-item__title">Оплата удобным для вас способом</h4>
+                            <p class="benefits__list-item__text">все газовозы оснащены терминалами для оплаты вашего
+                                заказа</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-6.png" alt="">
+                            <h4 class="benefits__list-item__title">Чистый газ без примесей</h4>
+                            <p class="benefits__list-item__text">нет наценки на стоимость газа как у перекупщиков и
+                                небольших частных компаний</p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-7.png" alt="">
+                            <h4 class="benefits__list-item__title">Длина заправочных рукавов — 50 метров</h4>
+                            <p class="benefits__list-item__text">не требуется подъезд автомобиля вплотную к резервуару
+                            </p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-8.png" alt="">
+                            <h4 class="benefits__list-item__title">Доставка сжиженного газа в формате 24/7</h4>
+                            <p class="benefits__list-item__text">привезем газ в удобное для вас время или же по графику
+                            </p>
+                        </div>
+                        <div class="benefits__list-item">
+                            <img class="benefits__list-item__img" src="images/benefits-list-9.png" alt="">
+                            <h4 class="benefits__list-item__title">Аттестованный персонал</h4>
+                            <p class="benefits__list-item__text">квалифицированные сотрудники проведут полную
+                                консультацию и дадут рекомендации, если такие нужны будут</p>
+                        </div>
+                    </div>
+                    <div class="benefits__info" style="background-image: url(./images/benefits-info-bg.png);">
+                        <h3 class="benefits__info-title">Благодаря нашему собственному автопарку мы можем
+                            давать гарантию, что доставим <span>за 4 часа</span></h3>
+                        <a class="benefits__info-btn" href="#">Это сильное конкурентное преимущество, которым
+                            мы дорожим</a>
+                    </div>
+                </div>
+            </section>
+            <section class="buy">
+                <div class="container">
+                    <div class="buy__inner">
+                        <h3 class="buy__title">Выберите свой объём Газовоза</h3>
+                        <div class="buy__tabs">
+                            <button class="buy__tabs-btn simple-btn --active" id="small" disabled>Малый 2000 л.</button>
+                            <button class="buy__tabs-btn simple-btn" id="medium">Средний 6000 л.</button>
+                            <button class="buy__tabs-btn simple-btn" id="standart">Стандартный 10 000 л.</button>
+                            <button class="buy__tabs-btn simple-btn" id="large">Оптовый 40 000 л.</button>
+                        </div>
+                        <div class="buy__images">
+                            <img class="buy__images-item --active" src="images/buy-tab-1.png" alt="" id="small-img">
+                            <img class="buy__images-item" src="images/buy-tab-2.png" alt="" id="medium-img">
+                            <img class="buy__images-item" src="images/buy-tab-3.png" alt="" id="standart-img">
+                            <img class="buy__images-item" src="images/buy-tab-4.png" alt="" id="large-img">
+                        </div>
+                        <a class="buy__btn style-btn" id="pupupCall">Заказать газ</a>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__inner">
+                        <h3 class="reviews__title">Отзывы наших клиентов</h3>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__inner">
+                                        <img class="swiper-slide__img" src="images/slider-photo.png" alt="">
+                                        <h4 class="swiper-slide__title">Ольга И.<span>Красногорск</span></h4>
+                                        <p class="swiper-slide__text">Я всегда боюсь газа , а особенно боюсь что он
+                                            может взорваться, как же мне помог Андрей водитель-экспедитор показал что
+                                            бояться тут нечего и самое главное моего присутствие даже не понадобится.
+                                            Спасибо компании за то что они все закрыли этот вопрос под ключ.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__inner">
+                                        <img class="swiper-slide__img" src="images/slider-photo.png" alt="">
+                                        <h4 class="swiper-slide__title">Ольга И.<span>Красногорск</span></h4>
+                                        <p class="swiper-slide__text">Я всегда боюсь газа , а особенно боюсь что он
+                                            может взорваться, как же мне помог Андрей водитель-экспедитор показал что
+                                            бояться тут нечего и самое главное моего присутствие даже не понадобится.
+                                            Спасибо компании за то что они все закрыли этот вопрос под ключ.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__inner">
+                                        <img class="swiper-slide__img" src="images/slider-photo.png" alt="">
+                                        <h4 class="swiper-slide__title">Ольга И.<span>Красногорск</span></h4>
+                                        <p class="swiper-slide__text">Я всегда боюсь газа , а особенно боюсь что он
+                                            может взорваться, как же мне помог Андрей водитель-экспедитор показал что
+                                            бояться тут нечего и самое главное моего присутствие даже не понадобится.
+                                            Спасибо компании за то что они все закрыли этот вопрос под ключ.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__inner">
+                                        <img class="swiper-slide__img" src="images/slider-photo.png" alt="">
+                                        <h4 class="swiper-slide__title">Ольга И.<span>Красногорск</span></h4>
+                                        <p class="swiper-slide__text">Я всегда боюсь газа , а особенно боюсь что он
+                                            может взорваться, как же мне помог Андрей водитель-экспедитор показал что
+                                            бояться тут нечего и самое главное моего присутствие даже не понадобится.
+                                            Спасибо компании за то что они все закрыли этот вопрос под ключ.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__inner">
+                                        <img class="swiper-slide__img" src="images/slider-photo.png" alt="">
+                                        <h4 class="swiper-slide__title">Ольга И.<span>Красногорск</span></h4>
+                                        <p class="swiper-slide__text">Я всегда боюсь газа , а особенно боюсь что он
+                                            может взорваться, как же мне помог Андрей водитель-экспедитор показал что
+                                            бояться тут нечего и самое главное моего присутствие даже не понадобится.
+                                            Спасибо компании за то что они все закрыли этот вопрос под ключ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img class="swiper-button-prev-img" src="images/prev-arrow.svg" alt="">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img class="swiper-button-next-img" src="images/next-arrow.svg" alt="">
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questhions">
+                <div class="container">
+                    <div class="questhions__inner">
+                        <h3 class="questhions__title">Ответы на часто задаваемые вопросы</h3>
+                        <ul class="questhions__list">
+                            <li class="questhions__list-item">
+                                <p class="questhions__list-item__text --1">
+                                    Есть ли у вас инженеры в компании?
+                                    <span>Текст ответа на вопрос</span>
+                                </p>
+                            </li>
+                            <li class="questhions__list-item">
+                                <p class="questhions__list-item__text --2">
+                                    Делаете ли вы отчистку газгольдера?
+                                    <span>Текст ответа на вопрос</span>
+                                </p>
+                            </li>
+                            <li class="questhions__list-item">
+                                <p class="questhions__list-item__text --3">
+                                    А вы не испортите газон у меня и соседей?
+                                    <span>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же
+                                        не мешаем соседям</span>
+                                </p>
+                            </li>
+                            <li class="questhions__list-item">
+                                <p class="questhions__list-item__text --4">
+                                    Вы предоставляете документы для субсидий?
+                                    <span>Текст ответа на вопрос</span>
+                                </p>
+                            </li>
+                            <li class="questhions__list-item">
+                                <p class="questhions__list-item__text --5">
+                                    Смогу ли я заказать во время праздников?
+                                    <span>Текст ответа на вопрос</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="callback">
+                <div class="container">
+                    <div class="callback__inner">
+                        <h3 class="callback__title">Не нашли ответа на свой вопрос задайте их нашему специалисту</h3>
+                        <div class="callback__specialist">
+                            <img class="callback__specialist-img" src="images/callback-img.png" alt="">
+                            <div class="callback__specialist-text">
+                                <h4 class="callback__specialist-text__name">Роман Ш.<span>Старший менеджер</span></h4>
+                            </div>
+                        </div>
+                        <form class="callback__form" action="">
+                            <input type="text" class="callback__form-input" placeholder="имя" required>
+                            <input type="tel" class="callback__form-input" placeholder="телефон" required>
+                            <textarea class="callback__form-textarea" name="" id="" placeholder="ваш вопрос" required
+                                rows="4"></textarea>
+                            <button class="callback__form-btn simple-btn">Задать вопрос</button>
+                        </form>
+                        <div class="callback__partners">
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-1.png" alt="">
+                            </div>
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-2.png" alt="">
+                            </div>
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-3.png" alt="">
+                            </div>
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-4.png" alt="">
+                            </div>
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-5.png" alt="">
+                            </div>
+                            <div class="callback__partners-item">
+                                <img class="callback__partners-logo" src="images/partners-logo-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="spetial">
+                <div class="container">
+                    <div class="spetial__inner">
+                        <h3 class="spetial__title">Закажи прямо сейчас и получи бесплатную установку телеметрии</h3>
+                        <a class="spetial__btn style-btn" id="pupupCall">Заказать газ</a>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div class="container">
+                    <div class="map__inner">
+                        <div class="map__info">
+                            <h3 class="map__info-title">Посетите наш уютный офис<span>где мы сможем вас полностью
+                                    проконсультировать по всем вопросам</span></h3>
+                            <p class="map__info-text">Офис <span>Видное , Белокаменное шоссе, 20</span></p>
+                            <p class="map__info-text">Телефон: <span><a class="map__info-text__link"
+                                        href="tel:+79263306834">+7 926 330-68-34</a></span></p>
+                        </div>
+                        <div class="map__map">
+                            <div class="map__map-frame" style="position:relative;overflow:hidden;"><a
+                                    href="https://yandex.ru/maps/10719/vidnoe/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Видное</a><a
+                                    href="https://yandex.ru/maps/10719/vidnoe/house/belokamennoye_shosse_20/Z04YcQBiTEAOQFtvfXl1dnhmbA==/?ll=37.773551%2C55.547397&utm_medium=mapframe&utm_source=maps&z=17.33"
+                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Белокаменное шоссе, 20
+                                    — Яндекс Карты</a><iframe
+                                    src="https://yandex.ru/map-widget/v1/?ll=37.773551%2C55.547397&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNDM0MzU0Mzg1EpoB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JvQtdC90LjQvdGB0LrQuNC5INCz0L7RgNC-0LTRgdC60L7QuSDQvtC60YDRg9CzLCDQktC40LTQvdC-0LUsINCR0LXQu9C-0LrQsNC80LXQvdC90L7QtSDRiNC-0YHRgdC1LCAyMCIKDRoXF0IVmTBeQg%2C%2C&z=17.33"
+                                    width="560" height="488" frameborder="1" allowfullscreen="true"
+                                    style="position:relative;"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__text" href="#">Политика конфиденциальности</a>
+                    <a class="footer__text" href="#">Согласие на обработку персональных данных</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
